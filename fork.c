@@ -5,10 +5,7 @@
 int main(int argc, char *argv[])
 {
 	printf("pid:%d\n", getpid());
-        printf("Executed once\n");
         int rc = fork();
-        printf("rc value:%d\n",rc);
-        printf("Executed twise\n");
         if(rc < 0){
                 fprintf(stderr, "fork failed!\n");
                 exit(1);
